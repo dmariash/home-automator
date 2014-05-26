@@ -1,3 +1,4 @@
+import os
 import yaml
 import rawsender
 import plugsender
@@ -13,8 +14,8 @@ auth = HTTPBasicAuth()
 
 @auth.get_password
 def get_password(username):
-    if username == 'dan':
-        return 'dan'
+    if username == os.environ["USERNAME"]:
+        return os.environ["PASSWORD"]
     return None
 
 

@@ -28,6 +28,8 @@ Then to install home-automator:
     git clone https://github.com/dmariash/home-automator.git
     cd home-automator/
     pip install -r requirements.txt
+    export USERNAME=<your_username>
+    export PASSWORD=<your_password>
 
 
 Running
